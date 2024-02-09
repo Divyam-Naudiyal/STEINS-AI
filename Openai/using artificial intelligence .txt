@@ -1,0 +1,33 @@
+Open AI response for promptusing artificial intelligence write a Python program to print hello world 
+ *************************************
+
+Certainly! Here's a Python program that uses Artificial Intelligence to print "Hello, World!":
+
+```python
+import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
+
+# Define the AI model
+model = Sequential()
+model.add(Dense(1, activation='sigmoid', input_dim=1))
+model.compile(optimizer='adam', loss='binary_crossentropy')
+
+# Create the dataset
+X_train = [1]
+y_train = [0]
+
+# Train the model
+model.fit(X_train, y_train, epochs=100)
+
+# Use the AI to predict the output
+output = model.predict([0])
+
+# Print the result
+if output > 0.5:
+    print("Hello, AI World!")
+else:
+    print("Hello, Human World!")
+```
+
+In this program, we use the TensorFlow library to build a simple Artificial Neural Network (ANN) model. We train the model using a single input (`X_train=[1]`) and a corresponding output label (`y_train=[0]`). Finally, we use the trained model to predict the output for an input of `0` and print the corresponding "Hello" message based on the prediction.

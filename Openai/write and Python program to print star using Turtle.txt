@@ -1,0 +1,31 @@
+Open AI response for promptusing artificial intelligence write and Python program to print star using Turtle 
+ *************************************
+
+import turtle
+
+def print_star(n):
+    angle = 180 - (180 / n)
+    for i in range(n):
+        turtle.forward(100)
+        turtle.right(angle)
+
+# Create a turtle graphics window
+window = turtle.Screen()
+
+# Set the turtle graphics window size
+window.setup(800, 600)
+
+# Create a turtle object
+star_turtle = turtle.Turtle()
+
+# Set the speed of the turtle
+star_turtle.speed(2)
+
+# Print a star with 5 points
+print_star(5)
+
+# Hide the turtle
+star_turtle.hideturtle()
+
+# Close the turtle graphics window
+turtle.done()
